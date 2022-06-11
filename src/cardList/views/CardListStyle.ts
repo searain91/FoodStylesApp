@@ -1,6 +1,7 @@
 import {StyleSheet} from 'react-native';
 import ApplicationStyle from '../../Themes/Application.Style';
 import colors from '../../Themes/Colors';
+import {Fonts} from '../../Themes/Fonts';
 
 export default StyleSheet.create({
   ...ApplicationStyle,
@@ -35,10 +36,10 @@ export default StyleSheet.create({
     marginTop: 39,
   },
   cardName: {
-    fontWeight: 'bold',
     fontSize: 18,
     marginRight: 8,
     flex: 1,
+    fontFamily: Fonts.fontBold,
   },
   containerView: {
     flex: 1,
@@ -87,6 +88,7 @@ export default StyleSheet.create({
   text: {
     color: colors.green,
     fontSize: 15,
+    fontFamily: Fonts.fontRegular,
   },
   button: {
     flexDirection: 'row',

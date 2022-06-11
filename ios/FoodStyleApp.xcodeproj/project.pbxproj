@@ -14,6 +14,12 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-FoodStyleApp-FoodStyleAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-FoodStyleApp-FoodStyleAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C9222B2D9BD341DAAA6910BB /* proxima_nova_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3FD1B82F43E4380A6C36AE1 /* proxima_nova_bold.ttf */; };
+		BF5C9B2B353D46318D8FD612 /* proxima_nova_reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 643B356024114C6BBF07BA5E /* proxima_nova_reg.ttf */; };
+		F7907BF57C6C4B27BCC02438 /* ProximaNovaAlt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B675FF07858C4D86B67105F8 /* ProximaNovaAlt-Bold.ttf */; };
+		E13B26C0367143F58C102C8B /* ProximaNovaAlt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57A527645D9E480FA4E79A08 /* ProximaNovaAlt-Regular.ttf */; };
+		D751A8B578FD448AAA854AB8 /* ProximaNovaAlt-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7D4571483144D41AD47F215 /* ProximaNovaAlt-Semibold.ttf */; };
+		B3E98930657045DC901501E9 /* ProximaNovaAltCond-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C003C3AC536B47CB9815F009 /* ProximaNovaAltCond-Semibold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FoodStyleApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-FoodStyleApp-FoodStyleAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodStyleApp-FoodStyleAppTests.release.xcconfig"; path = "Target Support Files/Pods-FoodStyleApp-FoodStyleAppTests/Pods-FoodStyleApp-FoodStyleAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		E3FD1B82F43E4380A6C36AE1 /* proxima_nova_bold.ttf */ = {isa = PBXFileReference; name = "proxima_nova_bold.ttf"; path = "../src/assets/fonts/proxima_nova_bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		643B356024114C6BBF07BA5E /* proxima_nova_reg.ttf */ = {isa = PBXFileReference; name = "proxima_nova_reg.ttf"; path = "../src/assets/fonts/proxima_nova_reg.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B675FF07858C4D86B67105F8 /* ProximaNovaAlt-Bold.ttf */ = {isa = PBXFileReference; name = "ProximaNovaAlt-Bold.ttf"; path = "../src/assets/fonts/ProximaNovaAlt-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		57A527645D9E480FA4E79A08 /* ProximaNovaAlt-Regular.ttf */ = {isa = PBXFileReference; name = "ProximaNovaAlt-Regular.ttf"; path = "../src/assets/fonts/ProximaNovaAlt-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C7D4571483144D41AD47F215 /* ProximaNovaAlt-Semibold.ttf */ = {isa = PBXFileReference; name = "ProximaNovaAlt-Semibold.ttf"; path = "../src/assets/fonts/ProximaNovaAlt-Semibold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C003C3AC536B47CB9815F009 /* ProximaNovaAltCond-Semibold.ttf */ = {isa = PBXFileReference; name = "ProximaNovaAltCond-Semibold.ttf"; path = "../src/assets/fonts/ProximaNovaAltCond-Semibold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +134,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				7F4B8A682ABD44C7A233F4F2 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +160,20 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		7F4B8A682ABD44C7A233F4F2 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				E3FD1B82F43E4380A6C36AE1 /* proxima_nova_bold.ttf */,
+				643B356024114C6BBF07BA5E /* proxima_nova_reg.ttf */,
+				B675FF07858C4D86B67105F8 /* ProximaNovaAlt-Bold.ttf */,
+				57A527645D9E480FA4E79A08 /* ProximaNovaAlt-Regular.ttf */,
+				C7D4571483144D41AD47F215 /* ProximaNovaAlt-Semibold.ttf */,
+				C003C3AC536B47CB9815F009 /* ProximaNovaAltCond-Semibold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -242,6 +269,12 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				C9222B2D9BD341DAAA6910BB /* proxima_nova_bold.ttf in Resources */,
+				BF5C9B2B353D46318D8FD612 /* proxima_nova_reg.ttf in Resources */,
+				F7907BF57C6C4B27BCC02438 /* ProximaNovaAlt-Bold.ttf in Resources */,
+				E13B26C0367143F58C102C8B /* ProximaNovaAlt-Regular.ttf in Resources */,
+				D751A8B578FD448AAA854AB8 /* ProximaNovaAlt-Semibold.ttf in Resources */,
+				B3E98930657045DC901501E9 /* ProximaNovaAltCond-Semibold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
