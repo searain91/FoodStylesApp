@@ -7,6 +7,7 @@ import {
   useWindowDimensions,
   Share,
   Alert,
+  ImageSourcePropType,
 } from 'react-native';
 import {BlurView} from '@react-native-community/blur';
 import {useDispatch, useSelector} from 'react-redux';
@@ -107,6 +108,19 @@ export const CardOptions = () => {
     );
   };
 
+  const renderButton = (
+    text: string,
+    onPress: any,
+    image: ImageSourcePropType,
+  ) => {
+    return (
+      <TouchableOpacity style={styles.button} onPress={onPress}>
+        <Text style={styles.text}>{text}</Text>
+        <Image source={image} />
+      </TouchableOpacity>
+    );
+  };
+
   return cardItem && offset > 0 ? (
     <BlurView style={styles.blueView} blurType="light" blurAmount={20}>
       <Animated.View style={[styles.animatedView, {top}]}>
@@ -120,18 +134,9 @@ export const CardOptions = () => {
             styles.animatedOptions,
             {transform: [{scaleX: scale}, {scaleY: scale}]},
           ]}>
-          <TouchableOpacity style={styles.button} onPress={shareAction}>
-            <Text style={styles.text}>{'Share'}</Text>
-            <Image source={images.share} />
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.button} onPress={duplicateAction}>
-            <Text style={styles.text}>{'Duplicate'}</Text>
-            <Image source={images.duplicate} />
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.button} onPress={deleteCardAction}>
-            <Text style={styles.text}>{'Delete'}</Text>
-            <Image source={images.delete} />
-          </TouchableOpacity>
+          {renderButton('Share', shareAction, images.share)}
+          {renderButton('Duplicate', duplicateAction, images.duplicate)}
+          {renderButton('Delete', deleteCardAction, images.delete)}
         </Animated.View>
       </Animated.View>
     </BlurView>
