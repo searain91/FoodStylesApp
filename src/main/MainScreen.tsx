@@ -12,6 +12,7 @@ import {apolloClient} from '../api';
 import {LOG_IN_WITH_EMAIL} from '../globalGraphql';
 import {FetchResult} from 'apollo-boost';
 import {getToken, saveToken} from '../utils/localStorage';
+import AuthScreen from '../auth/AuthScreen';
 
 const Stack = createStackNavigator();
 
@@ -72,7 +73,15 @@ const MainScreen = () => {
   return (
     <View style={styles.mainContainer}>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="CardListScreen">
+        <Stack.Navigator initialRouteName="AuthScreen">
+          <Stack.Screen
+            name="AuthScreen"
+            component={AuthScreen}
+            options={{
+              gestureEnabled: true,
+              headerShown: false,
+            }}
+          />
           <Stack.Screen
             name="CardListScreen"
             component={CardListScreen}
