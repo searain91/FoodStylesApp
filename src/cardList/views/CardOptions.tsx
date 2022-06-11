@@ -98,12 +98,8 @@ export const CardOptions = () => {
           text: 'Delete',
           style: 'destructive',
           onPress: async () => {
-            try {
-              closeBlurView();
-              dispatch(deleteCardRequest(cardItem.id));
-            } catch (e) {
-              Alert.alert('Error', 'Please try again!');
-            }
+            closeBlurView();
+            dispatch(deleteCardRequest(cardItem.id));
           },
         },
         {text: 'Cancel'},
