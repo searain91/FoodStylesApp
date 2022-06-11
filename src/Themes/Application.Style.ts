@@ -55,6 +55,12 @@ const ApplicationStyle = StyleSheet.create({
     height: 0.5,
     alignSelf: 'stretch',
   },
+  containerCenter: {
+    flex: 1,
+    backgroundColor: colors.white,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 });
 
 export default ApplicationStyle;

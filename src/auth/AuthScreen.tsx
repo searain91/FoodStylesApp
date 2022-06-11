@@ -1,11 +1,12 @@
 import React, {useEffect} from 'react';
 import styles from '../main/MainStyle';
-import {View, Text} from 'react-native';
+import {View, ActivityIndicator} from 'react-native';
 import {apolloClient} from '../api';
 import {LOG_IN_WITH_EMAIL} from '../globalGraphql';
 import {FetchResult} from 'apollo-boost';
-import {getToken, saveToken} from '../utils/localStorage';
+import {saveToken} from '../utils/localStorage';
 import {useNavigation} from '@react-navigation/native';
+import colors from '../Themes/Colors';
 
 interface LoginWithEmail {
   loginWithEmail?: UserInfo;
@@ -37,8 +38,8 @@ const AuthScreen = () => {
     }
   };
   return (
-    <View style={styles.mainContainer}>
-      <Text>{'Authentication'}</Text>
+    <View style={styles.containerCenter}>
+      <ActivityIndicator color={colors.grey} size="large" />
     </View>
   );
 };
