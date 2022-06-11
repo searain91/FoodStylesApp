@@ -25,16 +25,13 @@ const AuthScreen = () => {
 
   const logInWithEmailAction = async () => {
     try {
-      const token = await getToken();
-      if (!token) {
-        const result: FetchResult<LoginWithEmail> = await apolloClient.mutate({
-          mutation: LOG_IN_WITH_EMAIL,
-          variables: {email: 'john@doe.com', password: 'p4SSW0rd'},
-        });
-        const accessToken = result.data?.loginWithEmail?.accessToken ?? '';
-        saveToken(accessToken);
-        navigation.navigate('CardListScreen', {});
-      }
+      const result: FetchResult<LoginWithEmail> = await apolloClient.mutate({
+        mutation: LOG_IN_WITH_EMAIL,
+        variables: {email: 'john@doe.com', password: 'p4SSW0rd'},
+      });
+      const accessToken = result.data?.loginWithEmail?.accessToken ?? '';
+      saveToken(accessToken);
+      navigation.navigate('CardListScreen', {});
     } catch (error) {
       console.log('error', error);
     }
