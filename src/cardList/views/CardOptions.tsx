@@ -102,10 +102,7 @@ export const CardOptions = () => {
               closeBlurView();
               dispatch(deleteCardRequest(cardItem.id));
             } catch (e) {
-              Alert.alert(
-                '',
-                'An error occurred. Please try again after some time.',
-              );
+              Alert.alert('Error', 'Please try again!');
             }
           },
         },
